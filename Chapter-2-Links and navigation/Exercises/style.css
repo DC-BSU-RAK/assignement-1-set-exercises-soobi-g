@@ -1,0 +1,142 @@
+/* Outer Banks Color Theme */
+:root {
+    --obx-sand: #F5E8C7;
+    --obx-ocean: #1E6F9F;
+    --obx-sunset: #E77D4D;
+    --obx-dune: #D9B382;
+    --obx-dark: #2A363B;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--obx-dark);
+    background-color: var(--obx-sand);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--obx-ocean);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: rgb(27, 26, 26);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--obx-sunset);
+}
+
+/* Header */
+header {
+    background: linear-gradient(rgba(255, 26, 240, 0.8), rgba(0, 20, 31, 0.6)), 
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/*  Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: rgb(1, 240, 73);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.higlight-box {
+    border-left: 5px solid var(--obx-sunset);
+    background-color: rgba(231, 125, 77, 0.05);
+}
+
+h2 {
+    color: var(--obx-ocean);
+    border-bottom: 2px solid var(--obx-dune);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: var(--obx-ocean);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+
+.button:hover {
+    background-color: var(--obx-sunset);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: var(--obx-dark);
+    color: rgb(197, 45, 45);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Dsign */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+}

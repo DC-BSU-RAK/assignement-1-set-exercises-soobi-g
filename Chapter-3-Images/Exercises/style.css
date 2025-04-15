@@ -1,0 +1,78 @@
+/* sports Gallery Styles */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF9E6; //
+}
+
+h1 {
+    text-align: center;
+    color: #D32F2F; /**/
+    background-color: #FFEB3B; //
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #D32F2F; /* Red border */
+    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2); /* Red shadow */
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #FFC107; /* Yellow  */
+}
+
+/* CSS filters /
+#image1 {
+    filter: sepia(30%) contrast(110%) saturate(120%);
+}
+
+#image2 {
+    filter: brightness(105%) contrast(105%) hue-rotate(-10deg);
+}
+
+#image3 {
+    filter: saturate(130%) contrast(110%);
+}
+
+.license {
+    font-size: 0.8em;
+    color: #D32F2F; /* Red text */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Simple footer style */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #D32F2F; /* Red  */
+    color: white;
+    border-radius: 8px;
+}

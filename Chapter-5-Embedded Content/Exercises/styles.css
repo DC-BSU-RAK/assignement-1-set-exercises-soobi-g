@@ -1,0 +1,58 @@
+/*   styling (CSS) */
+body 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* 
+    align-items: center; /* \    overflow: hidden;
+    position: relative;
+}
+
+/*  animated stars for background */
+body:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 7px);
+    background-size: 50px 50px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-container {
+    text-align: center; /* Centers the content inside */
+    background-color: rgba(255, 246, 246, 0.7); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(255, 46, 119);
+    max-width: 90%;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+
+.message {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@keyframes fall {
+    0% {transform: translateY(-100px) rotate(0deg); opacity: 1;}
+    100% {transform: translateY(100vh) rotate(360deg); opacity: 0;}
+}
+
+/* Let's add some colorful confetti pieces */
+.confetti:nth-child(2n) {background-color: red;}
+.confetti:nth-child(3n) {background-color: rgb(71, 255, 237);}
+.confetti:nth-child(4n) {background-color: green;}
+.confetti:nth-child(5n) {background-color: rgb(255, 88, 255);}
